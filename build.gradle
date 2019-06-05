@@ -32,7 +32,6 @@ dependencies {
 		'org.glassfish.jersey.inject:jersey-hk2:2.27',
 		'log4j:log4j:1.2.16',
 		'org.apache.wink:wink-json4j:1.4'
-		 classpath "org.sonarsource.scanner.gradle: sonarqube-gradle-plugin:2.5"
 	providedCompile \
 		'javax:javaee-api:7.0'
 }
