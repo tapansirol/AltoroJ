@@ -19,7 +19,9 @@ sourceSets {
         }
     }
 }
-
+plugins {
+  id "org.sonarqube" version "2.7.1"
+}
 dependencies {
 	compile \
 		fileTree(dir: "${webAppDirName}/WEB-INF/lib", include: '*.jar'),
