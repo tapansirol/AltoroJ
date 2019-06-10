@@ -18,8 +18,9 @@ node{
    }
    
    stage('SonarQube analysis') {
+    def path = tool name: 'gradle-4.7', type: 'gradle'
     withSonarQubeEnv('sonar-server') {
-        sh "./gradlew clean sonarqube"
+        sh "${path}/bin/gradle -Dsonar.host.url=$SONAR_HOST_URL"
     }
   }
 }
