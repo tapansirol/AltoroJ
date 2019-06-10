@@ -17,7 +17,7 @@ node{
     }
   }
 	
-  cstage('Publish Artificats to UCD'){
+  stage('Publish Artificats to UCD'){
    step([$class: 'UCDeployPublisher',
         siteName: 'ucd-server',
         component: [
