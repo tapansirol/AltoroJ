@@ -38,7 +38,7 @@ node{
                 $class: 'com.urbancode.jenkins.plugins.ucdeploy.DeliveryHelper$Push',
                 pushVersion: '1.${BUILD_NUMBER}',
                 //baseDir: '/var/jenkins_home/workspace/JPetStore/target',
-		 baseDir: '/var/jenkins_home/workspace/altoro/build/libs/',
+		 baseDir: '/var/jenkins_home/workspace/Altoro/build/libs/',
                 fileIncludePatterns: '*.war',
                 fileExcludePatterns: '',
                // pushProperties: 'jenkins.server=Jenkins-app\njenkins.reviewed=false',
