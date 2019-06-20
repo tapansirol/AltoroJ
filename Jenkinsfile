@@ -3,7 +3,8 @@ node{
 	currentBuild.displayName = "1.${BUILD_NUMBER}"
 	def GIT_COMMIT
   stage ('cloning the repository'){
-      git 'https://github.com/tapansirol/AltoroJ.git'
+     def result = git 'https://github.com/tapansirol/AltoroJ.git'  
+     GIT_COMMIT = result.GIT_COMMIT		  
   }
 	
   stage('Gradle Build') {
